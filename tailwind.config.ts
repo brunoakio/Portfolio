@@ -13,6 +13,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        borderColor: {
+          '0%, 100%': {
+            borderColor: '#b5f6ec'
+          },
+          '50%': {
+            borderColor: '#00beff'
+          }, 
+        }
+      },
+      animation: {
+      borderColor: 'borderColor 2s infinite',
+    },
     },
   },
   plugins: [],

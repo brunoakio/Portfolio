@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Bground from "@/components/home/background";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="bg-[url('../img/background.webp')] w-screen h-screen bg-cover bg-no-repeat">
+          
+        
+        {children}
+        </div>
+      </body>
     </html>
   );
 }
